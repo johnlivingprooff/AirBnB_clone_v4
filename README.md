@@ -126,9 +126,9 @@ TestBaseModel class:
 * `def test_user_module_docstring(self)` - Test for the user.py module docstring
 * `def test_user_class_docstring(self)` - Test for the User class docstring
 
-
 ## Examples of use
-```
+
+```bash
 vagrantAirBnB_clone$./console.py
 (hbnb) help
 
@@ -151,14 +151,21 @@ EOF  all  create  destroy  help  quit  show  update
 ```
 
 ## Bugs
-No known bugs at this time. 
+
+No known bugs at this time.
 
 ## Authors
+
 Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
 Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
 David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
 
+Kwame C. Abbey - [Github](https://github.com/Kwame-Abbey) / [Twitter](https://twitter.com/)  
+John-Livingproof Fowowe - [Github](https://github.com/johnlivingprooff) / [Twitter](https://twitter.com/ola0luwajj)
+
 Second part of Airbnb: Joann Vuong
+
 ## License
-Public Domain. No copy write protection. 
+
+Public Domain. No copy write protection.
