@@ -2,7 +2,7 @@ $(document).ready(function () {
   const selectedAmenities = {};
 
   // Function to update selected amenities display
-  function updateSelectedAmenitiesDisplay() {
+  function updateSelectedAmenitiesDisplay () {
     $('div.amenities h4').html(Object.values(selectedAmenities).join(', ') || ' ');
   }
 
@@ -16,7 +16,7 @@ $(document).ready(function () {
     } else {
       delete selectedAmenities[amenityId];
     }
-    
+
     updateSelectedAmenitiesDisplay();
   });
 
@@ -41,15 +41,15 @@ $(document).ready(function () {
     }
   });
 
-  $('section.filters button').click( () => {
-    const data = {amenities: Object.keys(selectedAmenities)};
-    $('section.places').empty()
+  $('section.filters button').click(() => {
+    const data = { amenities: Object.keys(selectedAmenities) };
+    $('section.places').empty();
 
     $.ajax({
       url: 'http://127.0.0.1:5001/api/v1/places_search/',
       type: 'POST',
       contentType: 'application/json; charset=utf-8',
-      data: JSON.stringify({})
+      data: JSON.stringify(data)
     }).done((response) => {
       displayPlaces(response);
     }).fail((jqXHR, textStatus, errorThrown) => {
@@ -58,7 +58,7 @@ $(document).ready(function () {
   });
 
   // Function to display places
-  function displayPlaces(places) {
+  function displayPlaces (places) {
     for (const place of places) {
       const html = `
         <article>
